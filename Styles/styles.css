@@ -892,7 +892,7 @@ h1 {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     z-index: 100;
     width: 70px; /* Definindo uma largura fixa */
     height: 70px; /* Definindo uma altura fixa igual à largura */
@@ -911,4 +911,31 @@ h1 {
   #backToTop:hover {
     background-color: #0056b3;
   
+  }
+
+  @media (max-width: 768px) {
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 100;
+        width: 70px; /* Definindo uma largura fixa */
+        height: 70px; /* Definindo uma altura fixa igual à largura */
+        background-color: #00000094;
+        color: white;
+        border: none;
+        border-radius: 50%; /* Tornando o botão redondo */
+        cursor: pointer;
+    
+        font-size: 40px; /* Aumente o tamanho da fonte para se ajustar ao tamanho do botão */
+        text-align: center; /* Centralizando o conteúdo */
+        line-height: 50px; /* Centralizando verticalmente o conteúdo */
+        transition: background-color 0.3s ease;
+      }
+
+      #backToTop:hover {
+        background-color: #0056b3;
+      
+      }
   }
